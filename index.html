@@ -25,30 +25,11 @@
 
     <style>
       header {
-        position: relative;
-        /*background-image: url("img/welcome_2.jpeg"); /* Remplace par le chemin de ton image */
-        background-image: url("img/20250130_160826.jpg");
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
-        color: white;
-        height: 700px; /* Ajuste la hauteur selon ton besoin */
-        display: flex;
-        align-items: top;
-        justify-content: space-between;
-        padding: 0 20px;
-      }
-      .header-overlay {
-        /* Filtre sombre sur l'image */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.1); /* Noir semi-transparent */
+        background-color: #ffe4d4;
+        color: #cf0001;
       }
       header .navbar {
-        position: absolute; /* Fixation en haut */
+        /*position: absolute; /* Fixation en haut */
         top: 0; /* Place tout en haut */
         left: 0;
         right: 0;
@@ -56,22 +37,13 @@
         padding: 10px 20px; /* Marges internes */
       }
       header .navbar-nav a {
-        color: #ffe4d4; /* Couleur par défaut des liens */
+        color: #cf0001; /* Couleur par défaut des liens */
         text-decoration: none; /* Supprime le soulignement */
         transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
       }
-      header .overlay-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #ffe4d4;
-        font-size: 3.5rem;
-        /*font-weight: bold;*/
-        /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
+      header .navbar-nav a:hover {
+        color: #f3af87; /* Couleur des liens au survol */
       }
-
       .navbar-toggler {
         border: none !important;
       }
@@ -79,7 +51,8 @@
         box-shadow: none !important;
       }
       .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,288,212,1)' stroke-width='2' d='M4 7h22M4 15h22'/%3E%3C/svg%3E") !important;
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(207,0,1,1)' stroke-width='2' d='M4 7h22M4 15h22'/%3E%3C/svg%3E") !important;
+        color: #cf0001;
       }
       .dropdown-menu-end {
         right: 100%; /* Aligne le menu déroulant à droite */
@@ -169,15 +142,6 @@
     <!-- Header -->
     <header>
 
-      <!-- Overlay Text -->
-    <div class="overlay-text">
-        <!--<div class="gap-50" style="width:100%; height:20px;"></div>
-        <h2> Vous êtes au bon endroit!</h2>-->
-        <h1>  JVconnect </h1>
-        <h2>  Installations électriques en suisse romande </h2>
-      </div>
-
-
       <nav class="navbar navbar-expand-lg navbar-dark container">
         <a href="/" class="navbar-brand">
           <img src="img/montagnart-logo-couleur.png" alt="Montagn'Art" />
@@ -215,52 +179,15 @@
     <!-- Section bienvenue -->
     <div class="container-fluid" id='welcome'>
       <div class="container my-5">
-        
-          <!-- Colonne pour le texte -->
-          <h2>Bienvenue dans l'univers de Montagn'Art !</h2>
+          <h1>  JVconnect </h1>
+          <h2>  Installations électriques en suisse romande </h2>
             <br />
             <!--<p> Vous avez envie de découvrir la montagne et ses splendeurs? Vous êtes au bon endroit! </p>-->
             <p> Sous différentes formes, je vous propose de passer un moment proche de la nature pour vous
 émerveiller, apprendre tout en s’amusant ainsi que prendre le temps de vivre. Vous trouverez des activités pour les familles, les jeunes et les aînés ou même pour les
 entreprises. </p>
-            <p> En plus des activités proposées, il est possible de vous concocter une sortie sur mesure selon
-vos envies ou besoin. </p>
-          <p> Je vous souhaite une bonne visite ! </p>
-            <a href="about.html" class="contact-btn">EN SAVOIR PLUS SUR MONTAGN'ART</a>
-        
       </div>
     </div>
-
-    <!-- section pk pas vous -->
-  <section class="container-fluid g-0">
-      <!--<div class="image-block img-fluid" style="height: 500px;">
-        <img src="img/MontagnArt_Grand Combin_Mont Velan.jpg" style="height: 500px;">-->
-      <div class="image-block img-fluid" style="background-image: url('img/MontagnArt_Grand Combin_Mont Velan.jpg'); background-repeat:no-repeat; background-position: center; height: 500px;">
-        <div class="text" style = "color: #ffe4d4; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);">
-            <div class="gap-50" style="width:100%; height:80px;"></div>     
-          <h2 class='text-center'>  Et pourquoi pas vous ?</h2>
-          <div class="gap-50" style="width:100%; height:40px;"></div>
-                <p class='text-center'>
-                  Découvrez mes prochaines randonnées organisées 
-                  <br>
-                  Contactez-moi directement pour un programme à la carte</p>
-                  <div class="gap-50" style="width:100%; height:20px;"></div>
-                <!--<div class="text-center">
-                  <a href="contact.html" class="contact-btn" style="">ME CONTACTER</a>   
-                </div> -->
-                <p class="text-center">
-                    <a
-                      class="btn btn-red"
-                      href="contact.html"
-                      role="button"
-                      style="color: #ffe4d4; --bs-btn-border-color: #ffe4d4; --bs-btn-hover-bg: #f3af87; --bs-btn-hover-color: #ffe4d4;"
-                    >
-                      Me contacter</a
-                    >
-                  </p>
-        </div>
-    </div>
-    </section>
 
   <!-- Section concepts phares -->
   <section class="container-fluid">
@@ -269,9 +196,7 @@ vos envies ou besoin. </p>
         <div class="row">
         <!--<h2>Concepts de Randonnée</h2>-->
         <!--<div class="gap-50" style="width:100%; height:20px;"></div>-->
-        <h2><i>Chaque randonnée est une oeuvre d'art unique, où la nature, l'effort et la découverte se rencontrent pour offrir une expérience. </i></h2>
-        <div class="gap-50" style="width:100%; height:20px;"></div>
-          <h4>Randonnées proposées...</h4>
+        <h4>Services proposés...</h4>
           <div class="gap-50" style="width:100%; height:20px;"></div>
           
           <div class="col-12 col-md-6 col-lg-3" style="border: solid #ffe4d4 10px; background-color: white; ">
@@ -369,36 +294,8 @@ vos envies ou besoin. </p>
   <!-- Carousel -->
 <section class="py-5">
     <div>
-      <h2 class="text-center">Programme hivernal 2025</h2>
-      <br />
-      <p class="text-center">
-        Toutes les randonnées se feront en raquettes si l'enneigement le
-        permet.
-      </p>
-      <p class="text-center">
-        Les inscriptions sont obligatoires et ferment 48h avant la sortie.
-      </p>
-      <div class="gap-50" style="width:100%; height:10px;"></div>
-      <p class="text-center">
-        <a
-          class="btn btn-red"
-          href="https://forms.gle/66rdfC6GtcHRRoPk7"
-          role="button"
-          style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;
-          margin-right:30px;""
-        >
-          S'inscrire</a
-        >
-        <a
-          class="btn btn-red"
-          href="contact.html"
-          role="button"
-          style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;"
-        >
-          Pour toute question</a
-        >
-      </p>
-     
+      <h2 class="text-center">Services proposés</h2>
+      <div class="gap-50" style="width:100%; height:30px;"></div>
     </div>
     <div
       id="carouselExampleIndicators"
@@ -597,7 +494,31 @@ vos envies ou besoin. </p>
     </div>
   </section>
 
+  
    
+  <!-- section pk pas vous -->
+  <section class="container-fluid g-0">
+    <!--<div class="image-block img-fluid" style="height: 500px;">
+      <img src="img/MontagnArt_Grand Combin_Mont Velan.jpg" style="height: 500px;">-->
+    <div class="image-block img-fluid" style="background-image: url('img/MontagnArt_Grand Combin_Mont Velan.jpg'); background-repeat:no-repeat; background-position: center; height: 500px;">
+      <div class="text" style = "color: #ffe4d4; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);">
+          <div class="gap-50" style="width:100%; height:80px;"></div>     
+        <h2 class='text-center'>  Contactez-moi pour obtenir un devis ou pour toute autre demande.</h2>
+        <div class="gap-50" style="width:100%; height:40px;"></div>
+              <p class="text-center">
+                  <a
+                    class="btn btn-red"
+                    href="contact.html"
+                    role="button"
+                    style="color: #ffe4d4; --bs-btn-border-color: #ffe4d4; --bs-btn-hover-bg: #f3af87; --bs-btn-hover-color: #ffe4d4;"
+                  >
+                    Me contacter</a
+                  >
+                </p>
+      </div>
+  </div>
+  </section>
+
 
     <!-- Footer -->
     <footer>
@@ -624,16 +545,16 @@ vos envies ou besoin. </p>
           <!-- Ligne 2 : Copyright et réseaux sociaux -->
           <div class="row text-center text-md-start mt-3">
             <div class="col-12 col-md-6 mb-3 mb-md-0">
-              <p style="font-size: 80%;">&copy; 2025 Montagn'Art · Tous droits réservés · <a href="CG.html">Conditions Générales</a></p>
+              <p style="font-size: 80%;">&copy; 2025 JVConnect · Tous droits réservés · <a href="CG.html">Conditions Générales</a></p>
             </div>
             <div class="col-12 col-md-6 text-md-end social-icons">
-              <a href="https://www.instagram.com/montagnart.ch/" target="_blank"
-                ><i class="fab fa-instagram"></i
+              <a href="mailto:contact@montagn-art.ch" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
               ></a>
               <a
-                href="https://www.facebook.com/people/Montagnartch/61553699202260/"
+                href="https://www.linkedin.com/in/julien-veillard/"
                 target="_blank"
-                ><i class="fab fa-facebook"></i
+                ><i class="fab fa-linkedin"></i
               ></a>
             </div>
           </div>
