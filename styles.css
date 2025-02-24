@@ -1,22 +1,22 @@
 body {
   --bs-body-bg: #ffe4d4;
-  --bs-body-color: #cf0001;
+  --bs-body-color: darkblue;
 }
 
 body .py-5 {
-  background-color: #ffe4d4;
-  color: #cf0001;
+  background-color: white;
+  color: darkblue;
 }
 
 body .py-5-2 {
-  background-color: #ecc2a9;
-  color: #cf0001;
+  background-color: white;
+  color: darkblue;
 }
 
 /*Header*/
 header {
-  background-color: #ffe4d4;
-  color: #cf0001;
+  background-color: lightblue;
+  color: white;
 }
 
 header .navbar-brand img {
@@ -25,7 +25,7 @@ header .navbar-brand img {
 }
 
 header .navbar-nav a {
-  color: #cf0001;
+  color: white;
   /* Couleur par défaut des liens */
   text-decoration: none;
   /* Supprime le soulignement */
@@ -40,13 +40,13 @@ header .navbar-nav a:hover {
 
 /*Footer*/
 footer {
-  background-color: rgb(255, 228, 212);
-  color: #cf0001;
+  background-color: lightblue;
+  color: white;
   padding: 1rem 0;
 }
 
 footer a {
-  color: #cf0001;
+  color: white;
   text-decoration: none;
   /* Supprime le soulignement */
   transition: color 0.3s ease;
@@ -112,7 +112,7 @@ footer .social-icons a {
   object-fit: cover;
   background-color: white;
   /*rgba(255, 228, 212, 1);*/
-  color: #cf0001;
+  color: darkblue;
 }
 
 /* Style des flèches de navigation */

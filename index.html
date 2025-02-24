@@ -25,8 +25,8 @@
 
     <style>
       header {
-        background-color: #ffe4d4;
-        color: #cf0001;
+        background-color: lightblue;
+        color: white;
       }
       header .navbar {
         /*position: absolute; /* Fixation en haut */
@@ -37,7 +37,7 @@
         padding: 10px 20px; /* Marges internes */
       }
       header .navbar-nav a {
-        color: #cf0001; /* Couleur par défaut des liens */
+        color: white; /* Couleur par défaut des liens */
         text-decoration: none; /* Supprime le soulignement */
         transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
       }
@@ -52,7 +52,7 @@
       }
       .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(207,0,1,1)' stroke-width='2' d='M4 7h22M4 15h22'/%3E%3C/svg%3E") !important;
-        color: #cf0001;
+        color: white;
       }
       .dropdown-menu-end {
         right: 100%; /* Aligne le menu déroulant à droite */
@@ -95,36 +95,17 @@
           /*text-decoration: none; /* Enlever le souligné au survol */
       }
 
-      .portfolio-btn {
-          display: inline-block;
-          margin-top: 30%;
-          text-decoration: none; /* Souligné par défaut */
-          color: #ffe4d4; /* Couleur du texte */
-          border: none; /* 2px solid #cf0001; /* Bordure du bouton */
-          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-          transition: all 0.3s ease; /* Effet de transition lors du hover */
-      }
-
       btn .btn-red {
-    --bs-btn-color: #cf0001;
-    --bs-btn-border-color: #cf0001;
-    --bs-btn-hover-color: #ffe4d4;
-    --bs-btn-hover-bg: #cf0001;
-    --bs-btn-hover-border-color: #cf0001;
-    --bs-btn-active-bg: #cf0001;
-    --bs-btn-active-border-color: #cf0001;
-    --bs-btn-disabled-bg: #cf0001;
+    --bs-btn-color: darkblue;
+    --bs-btn-border-color: darkblue;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: darkblue;
+    --bs-btn-hover-border-color: darkblue;
+    --bs-btn-active-bg: darkblue;
+    --bs-btn-active-border-color: darkblue;
+    --bs-btn-disabled-bg: darkblue;
 }
-
-    #welcome a {
-  color: #cf0001;
-  transition: color 0.3s ease; /* Animation pour un effet fluide */
-}
-#welcome a:hover {
-  color: #f3af87; /* Change la couleur au survol */
-  text-decoration: none; /* Assure que le soulignement reste désactivé */
-}
-    </style>
+</style>
 
     <!-- Lien vers Bootstrap CSS -->
     <link
@@ -177,8 +158,10 @@
     </header>
 
     <!-- Section bienvenue -->
-    <div class="container-fluid" id='welcome'>
-      <div class="container my-5">
+    <!--<div class="container-fluid" style="background-color: blue; color: white">-->
+    <div class="container-fluid" >
+      <div class="container">
+        <div class="gap-50" style="width:100%; height:40px;"></div>
           <h1>  JVconnect </h1>
           <h2>  Installations électriques en suisse romande </h2>
             <br />
@@ -187,6 +170,7 @@
 émerveiller, apprendre tout en s’amusant ainsi que prendre le temps de vivre. Vous trouverez des activités pour les familles, les jeunes et les aînés ou même pour les
 entreprises. </p>
       </div>
+      <div class="gap-50" style="width:100%; height:20px;"></div>
     </div>
 
   <!-- Section concepts phares -->
@@ -201,7 +185,7 @@ entreprises. </p>
           
           <div class="col-12 col-md-6 col-lg-3" style="border: solid #ffe4d4 10px; background-color: white; ">
             <div class="gap-50" style="width:100%; height:20px;"></div>
-              <h4>Nature et Découverte</h4>
+              <h4>Borne de recharge</h4>
          <p> Pour en apprendre plus sur la nature tout en prenant le temps d'apprécier la beauté de ce qui nous entoure. </p>
           <div class="gap-50" style="width:100%; height:10px;"></div>
           <div class="text-center">
@@ -209,7 +193,7 @@ entreprises. </p>
           class="btn btn-red"
           href="rando.html#Nature_Decouverte"
           role="button"
-          style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;
+          style="--bs-btn-border-color: darkblue; --bs-btn-hover-bg: darkblue; --bs-btn-hover-color: #ffe4d4;
           margin-right:30px;"
         >
           Plus d'info</a
@@ -220,7 +204,7 @@ entreprises. </p>
           <div class="col-12 col-md-6 col-lg-3" style="border: solid #ffe4d4 10px; background-color: white; ">
             <div class="container" style="background-color: white; ">
               <div class="gap-50" style="width:100%; height:20px;"></div>
-              <h4>Artistique</h4>
+              <h4>Pronovo</h4>
 <p>Pour allier marche et expression créative (aquarelle, croquis ou dessin) </p>
 <div class="gap-50" style="width:100%; height:10px;"></div>
 <div class="text-center">
@@ -228,7 +212,7 @@ entreprises. </p>
   class="btn btn-red"
   href="rando.html#Artistiques"
   role="button"
-  style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;
+  style="--bs-btn-border-color: darkblue; --bs-btn-hover-bg: darkblue; --bs-btn-hover-color: #ffe4d4;
   margin-right:30px;"
 >
   Plus d'info</a
@@ -240,7 +224,7 @@ entreprises. </p>
           <div class="col-12 col-md-6 col-lg-3" style="border: solid #ffe4d4 10px; background-color: white; ">
   <div class="container" style="background-color: white; ">
     <div class="gap-50" style="width:100%; height:20px;"></div>
-    <h4>Thématique</h4>
+    <h4>Photovoltaïque</h4>
 <p>Pour les curieux qui veulent découvrir le patrimoine vivant et en apprendre plus sur des savoir-faire ancestraux qui font la richesse de la Suisse. </p>
 <div class="gap-50" style="width:100%;"></div>
 <div class="text-center">
@@ -248,7 +232,7 @@ entreprises. </p>
   class="btn btn-red"
   href="rando.html#Thematique"
   role="button"
-  style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;
+  style="--bs-btn-border-color: darkblue; --bs-btn-hover-bg: darkblue; --bs-btn-hover-color: #ffe4d4;
   margin-right:30px;"
 >
   Plus d'info</a
@@ -260,14 +244,14 @@ entreprises. </p>
           <div class="col-12 col-md-6 col-lg-3" style="border: solid #ffe4d4 10px; background-color: white; ">
   <div class="container" style="background-color: white;">
     <div class="gap-50" style="width:100%; height:20px;"></div>
-    <h4>Plusieurs Jours <!--: Immersion Totale en Montagne--></h4>
+    <h4>Contrôle OIBT<!--: Immersion Totale en Montagne--></h4>
     <p>Pour vivre une véritable aventure en pleine nature, une immersion complète dans l’univers montagnard. </p>
         <div class="text-center">
           <a
           class="btn btn-red"
           href="rando.html#Trek"
           role="button"
-          style="--bs-btn-border-color: #cf0001; --bs-btn-hover-bg: #cf0001; --bs-btn-hover-color: #ffe4d4;
+          style="--bs-btn-border-color: darkblue; --bs-btn-hover-bg: darkblue; --bs-btn-hover-color: #ffe4d4;
           margin-right:30px;""
         >
           Plus d'info</a
@@ -290,211 +274,6 @@ entreprises. </p>
           plaisir de vous proposer une sortie adaptée à vos besoins !</p>
     </div>
   </section>
-
-  <!-- Carousel -->
-<section class="py-5">
-    <div>
-      <h2 class="text-center">Services proposés</h2>
-      <div class="gap-50" style="width:100%; height:30px;"></div>
-    </div>
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div
-        class="carousel-indicators"
-        style="carousel-control-color: #cf0001;"
-      >
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <!--<button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>-->
-      </div>
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <!--<div class="carousel-item active">
-          <div class="row align-items-center">
-            <div
-              class="col-md py-2 carousel-img text-center"
-              style="max-height: 900px"
-            >
-               <img src="sorties/Val_Bagnes/Val_Bagnes_3.jpg" />
-            </div>
-            <div class="col-md py-2 mx-2 carousel-text">
-             <h5>LES ANIMAUX EN HIVER</h5>
-              <p>
-                Partez à la découverte des secrets des animaux de nos
-                montagnes lors d’une randonnée de 4h sur le balcon de
-                l’Entremont. Vous découvrirez comment les animaux s’adaptent à
-                la saison froide.
-              </p>
-              <p>
-                Enfants dès 10 ans acceptés.
-              </p>
-              <br />
-              <br />
-
-              <p><strong>Dimanche 2 février 2025</strong></p>
-              <p>Distance: 6km</p>
-              <p>Dénivelé +/-: 350m</p>
-              <p>
-                Prix: 50 CHF / Gratuit pour les enfants jusqu'à 16 ans
-                accompagnés d’un adulte.
-              </p>
-            </div>
-          </div>
-        </div>-->
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div
-              class="col-md py-2 carousel-img text-center"
-              style="max-height: 900px;"
-            >
-              <img src="sorties/hiver_25/MontagnArt-Rando pleine lune.JPG" />
-            </div>
-            <div class="col-md py-2 mx-2 carousel-text">
-              <h5>SORTIE PLEINE LUNE</h5>
-              <p>
-                Passez une soirée magique sous les étoiles après une journée
-                de travail. Autour des Paccots, nous ferons une marche pour
-                admirer l’astre lunaire. Pour vous plonger dans l’ambiance
-                enchantée, un conte vous sera récité.
-              </p>
-              <p>
-                Enfants dès 10 ans acceptés.
-              </p>
-              <br />
-              <br />
-
-              <p><strong>Vendredi 14 mars 2025</strong></p>
-              <p>Distance: 4km</p>
-              <p>Dénivelé +/-: 300m</p>
-              <p>
-                Prix: 45 CHF / Gratuit pour les enfants jusqu'à 16 ans
-                accompagnés d’un adulte.
-              </p>
-              <!--<a href="contact.html" class="contact-btn">CONTACTEZ-MOI !</a>-->
-            </div>
-          </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="carousel-item active">
-          <div class="row align-items-center">
-            <div
-              class="col-md py-2 carousel-img text-center"
-              style="max-height: 900px"
-            >
-              <img src="sorties/hiver_25/aquarelle_hiver_2.jpg" />
-            </div>
-            <div class="col-md py-2 mx-2 carousel-text">
-              <h5>AQUARELLE HIVERNALE</h5>
-              <p>
-                Découvrez le beau Val Ferret en plein hiver. Il y aura pour
-                commencer une petite randonnée avec croquis. Pour suivre, nous
-                irons nous mettre au chaud pour peindre une aquarelle de
-                paysage. Je vous montrerais comment je procède par étapes.
-              </p>
-              <p>
-                Une consommation à l’auberge sera obligatoire et non comprise
-                dans le prix.
-              </p>
-              <p>
-                Enfants dès 8 ans acceptés.
-              </p>
-              <br />
-              <br />
-
-              <p><strong>Vendredi 21 février 2025</strong></p>
-              <p>Distance: 2.5km</p>
-              <p>Dénivelé: +/- 80m</p>
-              <p>Prix: 50 CHF / 30 CHF pour les enfants jusqu'à 16 ans.</p>
-              <!--<a href="contact.html" class="contact-btn">CONTACTEZ-MOI !</a>-->
-            </div>
-          </div>
-        </div>
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div
-              class="col-md py-2 carousel-img text-center"
-              style="max-height: 900px"
-            >
-              <img src="sorties/hiver_25/MontagnArt-de l'epicea au tavillon.JPG" />
-            </div>
-            <div class="col-md py-2 mx-2 carousel-text">
-              <h5>DE L'EPICEA AU TAVILLON</h5>
-              <p>
-                Savez vous qu’est ce qu’un tavillon?
-              </p>
-              <p>
-                Je vous emmène à la découverte du cheminement de ce savoir
-                faire dans une sortie sur le domaine de Villars-Gryon. Pour
-                cette occasion, je vous guiderais dans un hameau classé
-                monument historique depuis 1970.
-              </p>
-              <p>
-                Enfants dès 10 ans acceptés.
-              </p>
-              <br />
-              <br />
-
-              <p><strong>Dimanche 30 mars 2025</strong></p>
-              <p>Distance: 8km</p>
-              <p>Dénivelé: +/- 300m</p>
-              <p>
-                Prix: 65 CHF / Gratuit pour les enfants jusqu'à 16 ans
-                accompagnés d’un adulte.
-              </p>
-              <!--<a href="contact.html" class="contact-btn">CONTACTEZ-MOI !</a>-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Flèches de navigation -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-  </section>
-
-  
    
   <!-- section pk pas vous -->
   <section class="container-fluid g-0">
@@ -548,7 +327,7 @@ entreprises. </p>
               <p style="font-size: 80%;">&copy; 2025 JVConnect · Tous droits réservés · <a href="CG.html">Conditions Générales</a></p>
             </div>
             <div class="col-12 col-md-6 text-md-end social-icons">
-              <a href="mailto:contact@montagn-art.ch" target="_blank"
+              <a href="mailto:jvconnect@vtx.ch" target="_blank"
                 ><i class="fa-solid fa-envelope"></i
               ></a>
               <a
