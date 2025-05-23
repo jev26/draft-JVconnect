@@ -1,5 +1,5 @@
 body {
-  --bs-body-bg: #ffe4d4;
+  --bs-body-bg: white;
   --bs-body-color: darkblue;
 }
 
@@ -16,7 +16,7 @@ body .py-5-2 {
 /*Header*/
 header {
   background-color: lightblue;
-  color: white;
+  color: darkblue;
 }
 
 header .navbar-brand img {
@@ -88,42 +88,4 @@ footer .social-icons a {
   color: #f3af87;
   /*font-weight: bold;
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité du texte */
-}
-
-/* Carousel */
-.carousel-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.carousel-img img {
-  max-height: 500px;
-  width: auto;
-  object-fit: cover;
-  /*margin-left: 5%;*/
-}
-
-.carousel-text {
-  margin-top: 0;
-  /*margin-right: 5%;*/
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  background-color: white;
-  /*rgba(255, 228, 212, 1);*/
-  color: darkblue;
-}
-
-/* Style des flèches de navigation */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  /*background-color: black;*/
-  border-radius: 50%;
-}
-
-/* Positionnement des flèches de navigation sur les côtés */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
 }
