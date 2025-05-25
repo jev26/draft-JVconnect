@@ -21,12 +21,14 @@ body .py-5-2 {
 
 header {
   position: relative;
-  background-image: url("img/fond_menu_navigation_haut.jpg"); /* Remplace par le chemin de ton image */
+  background-image: url("img/fond_menu_navigation_haut.jpg");
+  /* Remplace par le chemin de ton image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  height: 75px; /* Ajuste la hauteur selon ton besoin */
+  height: 100px;
+  /* Ajuste la hauteur selon ton besoin */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,24 +41,27 @@ header .navbar-brand img {
 }
 
 header .navbar-nav a {
-  color: darkblue;  /* Couleur par défaut des liens */
+  color: darkblue;
+  /* Couleur par défaut des liens */
   /*text-decoration: none; /* Supprime le soulignement */
-  transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
+  transition: color 0.3s ease;
+  /* Ajoute une transition pour un effet fluide */
 }
 
 header .navbar-nav a:hover {
   color: grey;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /*Footer*/
 footer {
   position: relative;
-  background-image: url("img/fond_footer_site.jpg"); /* Remplace par le chemin de ton image */
+  background-image: url("img/fond_footer_site.jpg");
+  /* Remplace par le chemin de ton image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- 
+
   /*background-color: darkblue;*/
   color: white;
   padding: 1rem 0;
@@ -64,13 +69,16 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: none; /* Supprime le soulignement */
-  transition: color 0.3s ease; /* Animation pour un effet fluide */
+  text-decoration: none;
+  /* Supprime le soulignement */
+  transition: color 0.3s ease;
+  /* Animation pour un effet fluide */
 }
 
 footer a:hover {
-  color: white; /* Change la couleur au survol */
-  text-decoration: underline;  
+  color: white;
+  /* Change la couleur au survol */
+  text-decoration: underline;
 }
 
 .back-to-top {
